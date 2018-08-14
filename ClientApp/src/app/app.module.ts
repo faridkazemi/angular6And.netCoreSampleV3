@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './home/home.component';
 import { AdministratorComponent } from './administrator/administrator.component';
+//import { AdministratorService } from './administrator/administrator.service';
 import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 
@@ -31,6 +32,7 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
       { path: 'administrator', component: AdministratorComponent },
     ])
   ],
+  //providers: [AdministratorService],
   providers: [],
   bootstrap: [AppComponent]
 })

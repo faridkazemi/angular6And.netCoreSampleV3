@@ -25,10 +25,14 @@
 
   <ItemGroup>
     <None Remove="ClientApp\src\app\administrator\administrator.component.ts" />
+    <None Remove="ClientApp\src\app\administrator\administrator.service.ts" />
+    <None Remove="ClientApp\src\app\customComponent\adminGrid.component.ts" />
   </ItemGroup>
 
   <ItemGroup>
     <TypeScriptCompile Include="ClientApp\src\app\administrator\administrator.component.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\administrator\administrator.service.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\customComponent\adminGrid.component.ts" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
