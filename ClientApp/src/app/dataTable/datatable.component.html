@@ -1,0 +1,9 @@
+<div>
+  ppppppppppppppppppp:  {{Test}}
+  <table class="table">
+    <ng-content></ng-content>
+  </table>
+  <ul class="pagination">
+    <li *ngFor="let page of Pages"><a (click)="clicked(page)">{{page}}</a></li>
+  </ul>
+</div>

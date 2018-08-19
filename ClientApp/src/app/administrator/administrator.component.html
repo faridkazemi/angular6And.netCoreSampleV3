@@ -5,7 +5,24 @@
     <title></title>
 </head>
 <body>
-  HIIIIIII
-  <!--<app-admin-grid [admData]="admData"></app-admin-grid>-->
+  <farid-data-table [DataSource]="Records" [Setting]="TableSettings" [Test]="MyTest">
+    <thead>
+      <tr>
+        <td sortable="true">name</td>
+        <td>Last Name</td>
+        <td>Age</td>
+        <td>Action</td>
+      </tr>
+    </thead>
+    <tbody>
+      <ng-content></ng-content>
+      <tr *ngFor="let record of Records">
+        <td>{{record.name}}</td>
+        <td>{{record.lastName}}</td>
+        <td>{{record.age}}</td>
+        <td><i role="button" (click)="print('HAHAH')" class="glyphicon glyphicon-print"></i></td>
+      </tr>
+    </tbody>
+  </farid-data-table>
 </body>
 </html>

@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { HomeComponent } from './home/home.component';
 import { AdministratorComponent } from './administrator/administrator.component';
+import { DataTableComponent } from './datatable/datatable.component';
 //import { AdministratorService } from './administrator/administrator.service';
 import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
@@ -19,7 +20,8 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
     HomeComponent,
     CounterComponent,
     AdministratorComponent,
-    FetchDataComponent
+    FetchDataComponent,
+    DataTableComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
